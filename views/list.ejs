@@ -1,0 +1,14 @@
+<%- include('./includes/html-page-start') %> 
+<main>
+    <% if(users.length > 0) {%>
+        <ul>
+            <% for (let user of users) {%>
+                <li><%= user.nome %> </li> 
+            <% } %>
+        </ul>
+    <% } else { %>
+        <div><%= 'No users yet' %> </div> 
+    <% } %> 
+
+</main>
+<%- include('./includes/html-page-end') %> 
